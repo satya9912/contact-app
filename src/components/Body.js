@@ -1,10 +1,15 @@
 import React from 'react';
 import { useGetContacts } from '../utils/useGetContacts';
+import Header from './Header';
+import ContactList from './ContactList';
 
 const Body = () => {
     useGetContacts();
   return (
-    <div>Body</div>
+    <div>
+        <Header />
+        <ContactList />
+    </div>
   )
 }
 
