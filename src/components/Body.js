@@ -1,14 +1,14 @@
 import React from 'react';
 import { useGetContacts } from '../utils/useGetContacts';
 import Header from './Header';
-import ContactList from './ContactList';
+import { Outlet } from 'react-router-dom';
 
 const Body = () => {
     useGetContacts();
   return (
     <div>
         <Header />
-        <ContactList />
+        <Outlet />
     </div>
   )
 }
